@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  body {
+    background-color: #FDFBF7; /* cream-50 */
+    color: #2C1B0F; /* bronze-900 */
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFE1A5;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFCD6E;
+}
+
+/* Brand Custom Utilities */
+.glow-gold {
+  box-shadow: 0 0 50px rgba(255, 149, 0, 0.2);
+}
+
+.glow-green {
+  box-shadow: 0 0 50px rgba(61, 125, 79, 0.15);
+}
+
+.text-gradient-mango {
+  background: linear-gradient(135deg, #B85E00 0%, #FF9500 50%, #EC7A08 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-grid-pattern {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(245, 236, 215, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 236, 215, 0.4) 1px, transparent 1px);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(253, 251, 247, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(245, 236, 215, 0.5);
+}
+
+.glass-panel-dark {
+  background: rgba(44, 27, 15, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(44, 27, 15, 0.05);
+}
